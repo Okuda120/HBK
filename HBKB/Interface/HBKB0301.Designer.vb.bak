@@ -1,0 +1,202 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class HBKB0301
+    Inherits System.Windows.Forms.Form
+
+    'フォームがコンポーネントの一覧をクリーンアップするために dispose をオーバーライドします。
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Windows フォーム デザイナで必要です。
+    Private components As System.ComponentModel.IContainer
+
+    'メモ: 以下のプロシージャは Windows フォーム デザイナで必要です。
+    'Windows フォーム デザイナを使用して変更できます。  
+    'コード エディタを使って変更しないでください。
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Dim TextCellType1 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Dim TextCellType2 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Dim TextCellType3 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.btnReg = New System.Windows.Forms.Button()
+        Me.txtRegReason = New System.Windows.Forms.TextBox()
+        Me.vwCauseLink = New FarPoint.Win.Spread.FpSpread()
+        Me.vwCauseLink_Sheet1 = New FarPoint.Win.Spread.SheetView()
+        Me.btnRemoveRow = New System.Windows.Forms.Button()
+        Me.btnAddRow = New System.Windows.Forms.Button()
+        Me.btnLastManageNmb = New System.Windows.Forms.Button()
+        CType(Me.vwCauseLink, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.vwCauseLink_Sheet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(26, 110)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(59, 12)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "原因リンク："
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(26, 22)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(35, 12)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "理由："
+        '
+        'btnCancel
+        '
+        Me.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnCancel.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.btnCancel.Location = New System.Drawing.Point(37, 232)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(88, 31)
+        Me.btnCancel.TabIndex = 5
+        Me.btnCancel.Text = "キャンセル"
+        Me.btnCancel.UseVisualStyleBackColor = True
+        '
+        'btnReg
+        '
+        Me.btnReg.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.btnReg.Location = New System.Drawing.Point(506, 232)
+        Me.btnReg.Name = "btnReg"
+        Me.btnReg.Size = New System.Drawing.Size(88, 31)
+        Me.btnReg.TabIndex = 6
+        Me.btnReg.Text = "決定"
+        Me.btnReg.UseVisualStyleBackColor = True
+        '
+        'txtRegReason
+        '
+        Me.txtRegReason.Location = New System.Drawing.Point(28, 39)
+        Me.txtRegReason.MaxLength = 500
+        Me.txtRegReason.Multiline = True
+        Me.txtRegReason.Name = "txtRegReason"
+        Me.txtRegReason.Size = New System.Drawing.Size(529, 57)
+        Me.txtRegReason.TabIndex = 1
+        '
+        'vwCauseLink
+        '
+        Me.vwCauseLink.AccessibleDescription = "FpSpread1, Sheet1, Row 0, Column 0, 01123"
+        Me.vwCauseLink.ClipboardOptions = FarPoint.Win.Spread.ClipboardOptions.NoHeaders
+        Me.vwCauseLink.HorizontalScrollBarPolicy = FarPoint.Win.Spread.ScrollBarPolicy.Never
+        Me.vwCauseLink.Location = New System.Drawing.Point(28, 126)
+        Me.vwCauseLink.Name = "vwCauseLink"
+        Me.vwCauseLink.Sheets.AddRange(New FarPoint.Win.Spread.SheetView() {Me.vwCauseLink_Sheet1})
+        Me.vwCauseLink.Size = New System.Drawing.Size(498, 88)
+        Me.vwCauseLink.TabIndex = 2
+        Me.vwCauseLink.TabStop = False
+        '
+        'vwCauseLink_Sheet1
+        '
+        Me.vwCauseLink_Sheet1.Reset()
+        vwCauseLink_Sheet1.SheetName = "Sheet1"
+        'Formulas and custom names must be loaded with R1C1 reference style
+        Me.vwCauseLink_Sheet1.ReferenceStyle = FarPoint.Win.Spread.Model.ReferenceStyle.R1C1
+        vwCauseLink_Sheet1.ColumnCount = 4
+        vwCauseLink_Sheet1.RowCount = 0
+        Me.vwCauseLink_Sheet1.ActiveColumnIndex = -1
+        Me.vwCauseLink_Sheet1.ActiveRowIndex = -1
+        Me.vwCauseLink_Sheet1.ColumnHeader.Cells.Get(0, 0).Value = "区分"
+        Me.vwCauseLink_Sheet1.ColumnHeader.Cells.Get(0, 1).Value = "管理番号"
+        Me.vwCauseLink_Sheet1.ColumnHeader.Cells.Get(0, 2).Value = "タイトル"
+        Me.vwCauseLink_Sheet1.ColumnHeader.Cells.Get(0, 3).Value = "区分コード"
+        Me.vwCauseLink_Sheet1.Columns.Get(0).CellType = TextCellType1
+        Me.vwCauseLink_Sheet1.Columns.Get(0).Label = "区分"
+        Me.vwCauseLink_Sheet1.Columns.Get(0).Locked = True
+        Me.vwCauseLink_Sheet1.Columns.Get(0).Width = 30.0!
+        TextCellType2.MaxLength = 1
+        Me.vwCauseLink_Sheet1.Columns.Get(1).CellType = TextCellType2
+        Me.vwCauseLink_Sheet1.Columns.Get(1).Label = "管理番号"
+        Me.vwCauseLink_Sheet1.Columns.Get(1).Locked = True
+        Me.vwCauseLink_Sheet1.Columns.Get(1).Width = 55.0!
+        Me.vwCauseLink_Sheet1.Columns.Get(2).CellType = TextCellType3
+        Me.vwCauseLink_Sheet1.Columns.Get(2).Label = "タイトル"
+        Me.vwCauseLink_Sheet1.Columns.Get(2).Locked = True
+        Me.vwCauseLink_Sheet1.Columns.Get(2).Width = 373.0!
+        Me.vwCauseLink_Sheet1.Columns.Get(3).Label = "区分コード"
+        Me.vwCauseLink_Sheet1.Columns.Get(3).Visible = False
+        Me.vwCauseLink_Sheet1.Columns.Get(3).Width = 10.0!
+        Me.vwCauseLink_Sheet1.RowHeader.Columns.Default.Resizable = False
+        Me.vwCauseLink_Sheet1.RowHeader.Columns.Get(0).Width = 25.0!
+        Me.vwCauseLink_Sheet1.RowHeader.Visible = False
+        Me.vwCauseLink_Sheet1.ReferenceStyle = FarPoint.Win.Spread.Model.ReferenceStyle.A1
+        '
+        'btnRemoveRow
+        '
+        Me.btnRemoveRow.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.btnRemoveRow.Location = New System.Drawing.Point(527, 194)
+        Me.btnRemoveRow.Name = "btnRemoveRow"
+        Me.btnRemoveRow.Size = New System.Drawing.Size(25, 20)
+        Me.btnRemoveRow.TabIndex = 3
+        Me.btnRemoveRow.Text = "-"
+        Me.btnRemoveRow.UseVisualStyleBackColor = True
+        '
+        'btnAddRow
+        '
+        Me.btnAddRow.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.btnAddRow.Location = New System.Drawing.Point(527, 126)
+        Me.btnAddRow.Name = "btnAddRow"
+        Me.btnAddRow.Size = New System.Drawing.Size(25, 20)
+        Me.btnAddRow.TabIndex = 2
+        Me.btnAddRow.Text = "+"
+        Me.btnAddRow.UseVisualStyleBackColor = True
+        '
+        'btnLastManageNmb
+        '
+        Me.btnLastManageNmb.Enabled = False
+        Me.btnLastManageNmb.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.btnLastManageNmb.Location = New System.Drawing.Point(527, 160)
+        Me.btnLastManageNmb.Name = "btnLastManageNmb"
+        Me.btnLastManageNmb.Size = New System.Drawing.Size(88, 20)
+        Me.btnLastManageNmb.TabIndex = 4
+        Me.btnLastManageNmb.Text = "最終管理番号"
+        Me.btnLastManageNmb.UseVisualStyleBackColor = True
+        '
+        'HBKB0301
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(634, 272)
+        Me.Controls.Add(Me.btnLastManageNmb)
+        Me.Controls.Add(Me.btnRemoveRow)
+        Me.Controls.Add(Me.btnAddRow)
+        Me.Controls.Add(Me.vwCauseLink)
+        Me.Controls.Add(Me.txtRegReason)
+        Me.Controls.Add(Me.btnReg)
+        Me.Controls.Add(Me.btnCancel)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Name = "HBKB0301"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "ひびき：変更理由登録"
+        CType(Me.vwCauseLink, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.vwCauseLink_Sheet1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents btnCancel As System.Windows.Forms.Button
+    Friend WithEvents btnReg As System.Windows.Forms.Button
+    Friend WithEvents txtRegReason As System.Windows.Forms.TextBox
+    Friend WithEvents vwCauseLink As FarPoint.Win.Spread.FpSpread
+    Friend WithEvents vwCauseLink_Sheet1 As FarPoint.Win.Spread.SheetView
+    Friend WithEvents btnRemoveRow As System.Windows.Forms.Button
+    Friend WithEvents btnAddRow As System.Windows.Forms.Button
+    Friend WithEvents btnLastManageNmb As System.Windows.Forms.Button
+End Class

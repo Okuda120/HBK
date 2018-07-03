@@ -1,0 +1,280 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>  Partial Class HBKX0201
+    Inherits System.Windows.Forms.Form
+
+    'フォームがコンポーネントの一覧をクリーンアップするために dispose をオーバーライドします。
+    <System.Diagnostics.DebuggerNonUserCode()>      Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Windows フォーム デザイナで必要です。
+    Private components As System.ComponentModel.IContainer
+
+    'メモ: 以下のプロシージャは Windows フォーム デザイナで必要です。
+    'Windows フォーム デザイナを使用して変更できます。  
+    'コード エディタを使って変更しないでください。
+    <System.Diagnostics.DebuggerStepThrough()>      Private Sub InitializeComponent()
+        Dim TextCellType1 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Dim TextCellType2 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Dim TextCellType3 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Dim TextCellType4 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Dim CheckBoxCellType1 As FarPoint.Win.Spread.CellType.CheckBoxCellType = New FarPoint.Win.Spread.CellType.CheckBoxCellType()
+        Dim CheckBoxCellType2 As FarPoint.Win.Spread.CellType.CheckBoxCellType = New FarPoint.Win.Spread.CellType.CheckBoxCellType()
+        Dim CheckBoxCellType3 As FarPoint.Win.Spread.CellType.CheckBoxCellType = New FarPoint.Win.Spread.CellType.CheckBoxCellType()
+        Me.btnBack = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblCount = New System.Windows.Forms.Label()
+        Me.btnReg = New System.Windows.Forms.Button()
+        Me.btnRemoveRow = New System.Windows.Forms.Button()
+        Me.btnAddRow = New System.Windows.Forms.Button()
+        Me.vwHBKUsrMasterList = New FarPoint.Win.Spread.FpSpread()
+        Me.vwHBKUsrMasterList_Sheet1 = New FarPoint.Win.Spread.SheetView()
+        Me.chkJtiFlg = New System.Windows.Forms.CheckBox()
+        Me.cmbGroupNM = New System.Windows.Forms.ComboBox()
+        Me.lblGroupSelect = New System.Windows.Forms.Label()
+        Me.grpLoginUser = New CommonHBK.GroupControlEx()
+        CType(Me.vwHBKUsrMasterList, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.vwHBKUsrMasterList_Sheet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'btnBack
+        '
+        Me.btnBack.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnBack.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.btnBack.Location = New System.Drawing.Point(5, 418)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(88, 31)
+        Me.btnBack.TabIndex = 8
+        Me.btnBack.Text = "戻る"
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label2.Location = New System.Drawing.Point(15, 82)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(41, 12)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "件数："
+        '
+        'lblCount
+        '
+        Me.lblCount.AutoSize = True
+        Me.lblCount.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.lblCount.Location = New System.Drawing.Point(52, 82)
+        Me.lblCount.Name = "lblCount"
+        Me.lblCount.Size = New System.Drawing.Size(23, 12)
+        Me.lblCount.TabIndex = 6
+        Me.lblCount.Text = "0件"
+        '
+        'btnReg
+        '
+        Me.btnReg.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnReg.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.btnReg.Location = New System.Drawing.Point(711, 418)
+        Me.btnReg.Name = "btnReg"
+        Me.btnReg.Size = New System.Drawing.Size(88, 31)
+        Me.btnReg.TabIndex = 9
+        Me.btnReg.Text = "登録"
+        Me.btnReg.UseVisualStyleBackColor = True
+        '
+        'btnRemoveRow
+        '
+        Me.btnRemoveRow.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnRemoveRow.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.btnRemoveRow.Location = New System.Drawing.Point(757, 387)
+        Me.btnRemoveRow.Name = "btnRemoveRow"
+        Me.btnRemoveRow.Size = New System.Drawing.Size(25, 20)
+        Me.btnRemoveRow.TabIndex = 4
+        Me.btnRemoveRow.Text = "-"
+        Me.btnRemoveRow.UseVisualStyleBackColor = True
+        '
+        'btnAddRow
+        '
+        Me.btnAddRow.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnAddRow.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.btnAddRow.Location = New System.Drawing.Point(757, 95)
+        Me.btnAddRow.Name = "btnAddRow"
+        Me.btnAddRow.Size = New System.Drawing.Size(25, 20)
+        Me.btnAddRow.TabIndex = 3
+        Me.btnAddRow.Text = "+"
+        Me.btnAddRow.UseVisualStyleBackColor = True
+        '
+        'vwHBKUsrMasterList
+        '
+        Me.vwHBKUsrMasterList.AccessibleDescription = "vwHBKUsrMasterList, Sheet1, Row 0, Column 0, "
+        Me.vwHBKUsrMasterList.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.vwHBKUsrMasterList.ClipboardOptions = FarPoint.Win.Spread.ClipboardOptions.NoHeaders
+        Me.vwHBKUsrMasterList.HorizontalScrollBarPolicy = FarPoint.Win.Spread.ScrollBarPolicy.AsNeeded
+        Me.vwHBKUsrMasterList.Location = New System.Drawing.Point(5, 95)
+        Me.vwHBKUsrMasterList.Name = "vwHBKUsrMasterList"
+        Me.vwHBKUsrMasterList.Sheets.AddRange(New FarPoint.Win.Spread.SheetView() {Me.vwHBKUsrMasterList_Sheet1})
+        Me.vwHBKUsrMasterList.Size = New System.Drawing.Size(751, 312)
+        Me.vwHBKUsrMasterList.TabIndex = 7
+        Me.vwHBKUsrMasterList.TabStop = False
+        '
+        'vwHBKUsrMasterList_Sheet1
+        '
+        Me.vwHBKUsrMasterList_Sheet1.Reset()
+        vwHBKUsrMasterList_Sheet1.SheetName = "Sheet1"
+        'Formulas and custom names must be loaded with R1C1 reference style
+        Me.vwHBKUsrMasterList_Sheet1.ReferenceStyle = FarPoint.Win.Spread.Model.ReferenceStyle.R1C1
+        vwHBKUsrMasterList_Sheet1.ColumnCount = 12
+        vwHBKUsrMasterList_Sheet1.RowCount = 0
+        Me.vwHBKUsrMasterList_Sheet1.ActiveColumnIndex = -1
+        Me.vwHBKUsrMasterList_Sheet1.ActiveRowIndex = -1
+        Me.vwHBKUsrMasterList_Sheet1.AutoGenerateColumns = False
+        Me.vwHBKUsrMasterList_Sheet1.ColumnHeader.Cells.Get(0, 0).Value = "ID"
+        Me.vwHBKUsrMasterList_Sheet1.ColumnHeader.Cells.Get(0, 1).Value = "氏名 *"
+        Me.vwHBKUsrMasterList_Sheet1.ColumnHeader.Cells.Get(0, 2).Value = "氏名カナ *"
+        Me.vwHBKUsrMasterList_Sheet1.ColumnHeader.Cells.Get(0, 3).Value = "メールアドレス"
+        Me.vwHBKUsrMasterList_Sheet1.ColumnHeader.Cells.Get(0, 4).Value = "管理者"
+        Me.vwHBKUsrMasterList_Sheet1.ColumnHeader.Cells.Get(0, 5).Value = "デフォルト"
+        Me.vwHBKUsrMasterList_Sheet1.ColumnHeader.Cells.Get(0, 6).Value = "削除"
+        Me.vwHBKUsrMasterList_Sheet1.ColumnHeader.Cells.Get(0, 7).Value = "新規データ(隠し)"
+        Me.vwHBKUsrMasterList_Sheet1.ColumnHeader.Cells.Get(0, 8).Value = "削除フラグ(隠し)"
+        Me.vwHBKUsrMasterList_Sheet1.ColumnHeader.Cells.Get(0, 9).Value = "ソート順(隠し)"
+        Me.vwHBKUsrMasterList_Sheet1.ColumnHeader.Cells.Get(0, 10).Value = "テキストボックス変更フラグ(隠し)"
+        Me.vwHBKUsrMasterList_Sheet1.ColumnHeader.Cells.Get(0, 11).Value = "チェックボックス変更フラグ(隠し)"
+        Me.vwHBKUsrMasterList_Sheet1.ColumnHeader.Rows.Get(0).Height = 21.0!
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(0).BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        TextCellType1.MaxLength = 50
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(0).CellType = TextCellType1
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(0).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.General
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(0).Label = "ID"
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(0).Locked = True
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(0).Width = 61.0!
+        TextCellType2.MaxLength = 25
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(1).CellType = TextCellType2
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(1).Label = "氏名 *"
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(1).Width = 100.0!
+        TextCellType3.MaxLength = 25
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(2).CellType = TextCellType3
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(2).Label = "氏名カナ *"
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(2).Width = 130.0!
+        TextCellType4.MaxLength = 50
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(3).CellType = TextCellType4
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(3).Label = "メールアドレス"
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(3).Width = 205.0!
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(4).CellType = CheckBoxCellType1
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(4).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(4).Label = "管理者"
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(4).Locked = False
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(4).Width = 50.0!
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(5).CellType = CheckBoxCellType2
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(5).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(5).Label = "デフォルト"
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(5).Locked = False
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(5).Width = 50.0!
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(6).CellType = CheckBoxCellType3
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(6).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(6).Label = "削除"
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(6).Width = 50.0!
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(7).Label = "新規データ(隠し)"
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(7).Locked = True
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(8).Label = "削除フラグ(隠し)"
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(8).Locked = True
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(9).Label = "ソート順(隠し)"
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(9).Locked = True
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(10).Label = "テキストボックス変更フラグ(隠し)"
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(10).Locked = True
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(10).Width = 103.0!
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(11).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(11).Label = "チェックボックス変更フラグ(隠し)"
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(11).Locked = True
+        Me.vwHBKUsrMasterList_Sheet1.Columns.Get(11).Width = 92.0!
+        Me.vwHBKUsrMasterList_Sheet1.DataAutoCellTypes = False
+        Me.vwHBKUsrMasterList_Sheet1.DataAutoHeadings = False
+        Me.vwHBKUsrMasterList_Sheet1.DataAutoSizeColumns = False
+        Me.vwHBKUsrMasterList_Sheet1.RowHeader.Columns.Default.Resizable = False
+        Me.vwHBKUsrMasterList_Sheet1.ReferenceStyle = FarPoint.Win.Spread.Model.ReferenceStyle.A1
+        '
+        'chkJtiFlg
+        '
+        Me.chkJtiFlg.AutoSize = True
+        Me.chkJtiFlg.Location = New System.Drawing.Point(292, 78)
+        Me.chkJtiFlg.Name = "chkJtiFlg"
+        Me.chkJtiFlg.Size = New System.Drawing.Size(109, 16)
+        Me.chkJtiFlg.TabIndex = 2
+        Me.chkJtiFlg.Text = "削除データも表示"
+        Me.chkJtiFlg.UseVisualStyleBackColor = True
+        '
+        'cmbGroupNM
+        '
+        Me.cmbGroupNM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbGroupNM.FormattingEnabled = True
+        Me.cmbGroupNM.Location = New System.Drawing.Point(95, 33)
+        Me.cmbGroupNM.Name = "cmbGroupNM"
+        Me.cmbGroupNM.Size = New System.Drawing.Size(121, 20)
+        Me.cmbGroupNM.TabIndex = 1
+        '
+        'lblGroupSelect
+        '
+        Me.lblGroupSelect.AutoSize = True
+        Me.lblGroupSelect.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.lblGroupSelect.Location = New System.Drawing.Point(15, 36)
+        Me.lblGroupSelect.Name = "lblGroupSelect"
+        Me.lblGroupSelect.Size = New System.Drawing.Size(77, 12)
+        Me.lblGroupSelect.TabIndex = 0
+        Me.lblGroupSelect.Text = "グループ選択"
+        '
+        'grpLoginUser
+        '
+        Me.grpLoginUser.Location = New System.Drawing.Point(401, 0)
+        Me.grpLoginUser.Name = "grpLoginUser"
+        Me.grpLoginUser.PropBtnUnlockEnabled = False
+        Me.grpLoginUser.PropBtnUnlockVisible = False
+        Me.grpLoginUser.PropLockDate = New Date(2012, 8, 21, 9, 51, 43, 739)
+        Me.grpLoginUser.PropLockInfoVisible = False
+        Me.grpLoginUser.Size = New System.Drawing.Size(390, 52)
+        Me.grpLoginUser.TabIndex = 10
+        Me.grpLoginUser.TabStop = False
+        '
+        'HBKX0201
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(803, 456)
+        Me.Controls.Add(Me.btnBack)
+        Me.Controls.Add(Me.btnReg)
+        Me.Controls.Add(Me.grpLoginUser)
+        Me.Controls.Add(Me.lblGroupSelect)
+        Me.Controls.Add(Me.cmbGroupNM)
+        Me.Controls.Add(Me.chkJtiFlg)
+        Me.Controls.Add(Me.btnRemoveRow)
+        Me.Controls.Add(Me.btnAddRow)
+        Me.Controls.Add(Me.lblCount)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.vwHBKUsrMasterList)
+        Me.MinimumSize = New System.Drawing.Size(235, 80)
+        Me.Name = "HBKX0201"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "ひびき：ひびきユーザーマスター登録"
+Me.vwHBKUsrMasterList.Skin = FarPoint.Win.Spread.DefaultSpreadSkins.Office2007
+        CType(Me.vwHBKUsrMasterList, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.vwHBKUsrMasterList_Sheet1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents btnBack As System.Windows.Forms.Button
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents lblCount As System.Windows.Forms.Label
+    Friend WithEvents btnReg As System.Windows.Forms.Button
+    Friend WithEvents btnRemoveRow As System.Windows.Forms.Button
+    Friend WithEvents btnAddRow As System.Windows.Forms.Button
+    Friend WithEvents vwHBKUsrMasterList As FarPoint.Win.Spread.FpSpread
+    Friend WithEvents vwHBKUsrMasterList_Sheet1 As FarPoint.Win.Spread.SheetView
+    Friend WithEvents chkJtiFlg As System.Windows.Forms.CheckBox
+    Friend WithEvents cmbGroupNM As System.Windows.Forms.ComboBox
+    Friend WithEvents lblGroupSelect As System.Windows.Forms.Label
+    Friend WithEvents grpLoginUser As CommonHBK.GroupControlEx
+End Class

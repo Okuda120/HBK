@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B35A2EF-7615-4C99-870A-C24AEECA2C39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HBKX.My.MyApplication</StartupObject>
+    <RootNamespace>HBKX</RootNamespace>
+    <AssemblyName>HBKX</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HBKX.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HBKX.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common">
+      <HintPath>..\lib\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonHBK">
+      <HintPath>..\CommonHBK\bin\Debug\CommonHBK.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=5.0.2016.2008, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SpreadWin5\Bin\v5.0.2016.2008\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.SpreadJ, Version=5.0.2016.2008, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SpreadWin5\Bin\v5.0.2016.2008\FarPoint.Win.SpreadJ.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\CommonHBK\bin\Debug\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\lib\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\DataHBKX0101.vb" />
+    <Compile Include="Data\DataHBKX0102.vb" />
+    <Compile Include="Data\DataHBKX0103.vb" />
+    <Compile Include="Data\DataHBKX0201.vb" />
+    <Compile Include="Data\DataHBKX0301.vb" />
+    <Compile Include="Data\DataHBKX0401.vb" />
+    <Compile Include="Data\DataHBKX0501.vb" />
+    <Compile Include="Data\DataHBKX0601.vb" />
+    <Compile Include="Data\DataHBKX0701.vb" />
+    <Compile Include="Data\DataHBKX0801.vb" />
+    <Compile Include="Data\DataHBKX0901.vb" />
+    <Compile Include="Data\DataHBKX0110.vb" />
+    <Compile Include="Data\DataHBKX1001.vb" />
+    <Compile Include="Data\DataHBKX1101.vb" />
+    <Compile Include="Data\DataHBKX1201.vb" />
+    <Compile Include="Data\DataHBKX1301.vb" />
+    <Compile Include="Data\DataHBKX1401.vb" />
+    <Compile Include="Declare\CommonDeclareHBKX.vb" />
+    <Compile Include="Interface\HBKX0101.Designer.vb">
+      <DependentUpon>HBKX0101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX0101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKX0102.Designer.vb">
+      <DependentUpon>HBKX0102.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX0102.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKX0103.Designer.vb">
+      <DependentUpon>HBKX0103.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX0103.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKX0110.Designer.vb">
+      <DependentUpon>HBKX0110.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX0110.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKX0201.Designer.vb">
+      <DependentUpon>HBKX0201.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX0201.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKX0301.Designer.vb">
+      <DependentUpon>HBKX0301.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX0301.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKX0401.designer.vb">
+      <DependentUpon>HBKX0401.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX0401.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKX0501.Designer.vb">
+      <DependentUpon>HBKX0501.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX0501.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKX0601.designer.vb">
+      <DependentUpon>HBKX0601.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX0601.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKX0701.Designer.vb">
+      <DependentUpon>HBKX0701.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX0701.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKX0801.designer.vb">
+      <DependentUpon>HBKX0801.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX0801.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKX0901.designer.vb">
+      <DependentUpon>HBKX0901.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX0901.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKX1001.Designer.vb">
+      <DependentUpon>HBKX1001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX1001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKX1101.Designer.vb">
+      <DependentUpon>HBKX1101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX1101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKx1201.Designer.vb">
+      <DependentUpon>HBKX1201.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX1201.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKX1301.Designer.vb">
+      <DependentUpon>HBKX1301.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX1301.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKX1401.Designer.vb">
+      <DependentUpon>HBKX1401.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKX1401.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logic\LogicHBKX0101.vb" />
+    <Compile Include="Logic\LogicHBKX0102.vb" />
+    <Compile Include="Logic\LogicHBKX0103.vb" />
+    <Compile Include="Logic\LogicHBKX0201.vb" />
+    <Compile Include="Logic\LogicHBKX0301.vb" />
+    <Compile Include="Logic\LogicHBKX0401.vb" />
+    <Compile Include="Logic\LogicHBKX0501.vb" />
+    <Compile Include="Logic\LogicHBKX0601.vb" />
+    <Compile Include="Logic\LogicHBKX0701.vb" />
+    <Compile Include="Logic\LogicHBKX0801.vb" />
+    <Compile Include="Logic\LogicHBKX0901.vb" />
+    <Compile Include="Logic\LogicHBKX0110.vb" />
+    <Compile Include="Logic\LogicHBKX1001.vb" />
+    <Compile Include="Logic\LogicHBKX1101.vb" />
+    <Compile Include="Logic\LogicHBKX1201.vb" />
+    <Compile Include="Logic\LogicHBKX1301.vb" />
+    <Compile Include="Logic\LogicHBKX1401.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Sql\SqlHBKX0101.vb" />
+    <Compile Include="Sql\SqlHBKX0102.vb" />
+    <Compile Include="Sql\SqlHBKX0103.vb" />
+    <Compile Include="Sql\SqlHBKX0201.vb" />
+    <Compile Include="Sql\SqlHBKX0301.vb" />
+    <Compile Include="Sql\SqlHBKX0401.vb" />
+    <Compile Include="Sql\SqlHBKX0501.vb" />
+    <Compile Include="Sql\SqlHBKX0601.vb" />
+    <Compile Include="Sql\SqlHBKX0701.vb" />
+    <Compile Include="Sql\SqlHBKX0801.vb" />
+    <Compile Include="Sql\SqlHBKX0901.vb" />
+    <Compile Include="Sql\SqlHBKX0110.vb" />
+    <Compile Include="Sql\SqlHBKX1001.vb" />
+    <Compile Include="Sql\SqlHBKX1101.vb" />
+    <Compile Include="Sql\SqlHBKX1201.vb" />
+    <Compile Include="Sql\SqlHBKX1301.vb" />
+    <Compile Include="Sql\SqlHBKX1401.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Interface\HBKX0101.resx">
+      <DependentUpon>HBKX0101.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX0102.resx">
+      <DependentUpon>HBKX0102.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX0103.resx">
+      <DependentUpon>HBKX0103.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX0110.resx">
+      <DependentUpon>HBKX0110.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX0201.resx">
+      <DependentUpon>HBKX0201.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX0301.resx">
+      <DependentUpon>HBKX0301.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX0401.resx">
+      <DependentUpon>HBKX0401.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX0501.resx">
+      <DependentUpon>HBKX0501.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX0601.resx">
+      <DependentUpon>HBKX0601.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX0701.resx">
+      <DependentUpon>HBKX0701.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX0801.resx">
+      <DependentUpon>HBKX0801.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX0901.resx">
+      <DependentUpon>HBKX0901.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX1001.resx">
+      <DependentUpon>HBKX1001.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX1101.resx">
+      <DependentUpon>HBKX1101.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX1201.resx">
+      <DependentUpon>HBKX1201.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX1301.resx">
+      <DependentUpon>HBKX1301.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKX1401.resx">
+      <DependentUpon>HBKX1401.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HBKZ\HBKZ.vbproj">
+      <Project>{9908D5BE-74CA-4EF5-B3B4-6BE8C56A7D58}</Project>
+      <Name>HBKZ</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

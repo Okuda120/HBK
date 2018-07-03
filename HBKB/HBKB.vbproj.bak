@@ -1,0 +1,649 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0237CEAB-C435-4FD2-944A-2C92A3836924}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HBKB.My.MyApplication</StartupObject>
+    <RootNamespace>HBKB</RootNamespace>
+    <AssemblyName>HBKB</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HBKB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HBKB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=5.0.2016.2008, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SpreadWin5\Bin\v5.0.2016.2008\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.SpreadJ, Version=5.0.2016.2008, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SpreadWin5\Bin\v5.0.2016.2008\FarPoint.Win.SpreadJ.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\lib\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.0.11.91, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\DataHBKB0102.vb" />
+    <Compile Include="Data\DataHBKB0201.vb" />
+    <Compile Include="Data\DataHBKB0202.vb" />
+    <Compile Include="Data\DataHBKB0203.vb" />
+    <Compile Include="Data\DataHBKB0204.vb" />
+    <Compile Include="Data\DataHBKB0301.vb" />
+    <Compile Include="Data\DataHBKB0401.vb" />
+    <Compile Include="Data\DataHBKB0501.vb" />
+    <Compile Include="Data\DataHBKB0701.vb" />
+    <Compile Include="Data\DataHBKB0702.vb" />
+    <Compile Include="Data\DataHBKB0801.vb" />
+    <Compile Include="Data\DataHBKB0901.vb" />
+    <Compile Include="Data\DataHBKB1001.vb" />
+    <Compile Include="Data\DataHBKB1101.vb" />
+    <Compile Include="Data\DataHBKB1102.vb" />
+    <Compile Include="Data\DataHBKB1103.vb" />
+    <Compile Include="Data\DataHBKB1104.vb" />
+    <Compile Include="Data\DataHBKB1105.vb" />
+    <Compile Include="Data\DataHBKB1201.vb" />
+    <Compile Include="Data\DataHBKB1202.vb" />
+    <Compile Include="Data\DataHBKB0601.vb" />
+    <Compile Include="Data\DataHBKB1203.vb" />
+    <Compile Include="Data\DataHBKB1204.vb" />
+    <Compile Include="Data\DataHBKB1301.vb" />
+    <Compile Include="Data\DataHBKC0101.vb" />
+    <Compile Include="Data\DataHBKC0102.vb" />
+    <Compile Include="Data\DataHBKC0201.vb" />
+    <Compile Include="Data\DataHBKC0202.vb" />
+    <Compile Include="Data\DataHBKC0203.vb" />
+    <Compile Include="Data\DataHBKC0204.vb" />
+    <Compile Include="Data\DataHBKC0205.vb" />
+    <Compile Include="Data\DataHBKC0206.vb" />
+    <Compile Include="Data\DataHBKC0209.vb" />
+    <Compile Include="Data\DataHBKC0210.vb" />
+    <Compile Include="Data\DataHBKC0211.vb" />
+    <Compile Include="Data\DataHBKC0301.vb" />
+    <Compile Include="Data\DataHBKC0401.vb" />
+    <Compile Include="Data\DataHBKC0501.vb" />
+    <Compile Include="Data\DataHBKC0601.vb" />
+    <Compile Include="Data\DataHBKC0701.vb" />
+    <Compile Include="Data\DataHBKD0101.vb" />
+    <Compile Include="Data\DataHBKD0102.vb" />
+    <Compile Include="Data\DataHBKD0201.vb" />
+    <Compile Include="Data\DataHBKD0203.vb" />
+    <Compile Include="Data\DataHBKE0101.vb" />
+    <Compile Include="Data\DataHBKE0102.vb" />
+    <Compile Include="Data\DataHBKE0201.vb" />
+    <Compile Include="Data\DataHBKE0202.vb" />
+    <Compile Include="Data\DataHBKF0101.vb" />
+    <Compile Include="Data\DataHBKF0102.vb" />
+    <Compile Include="Data\DataHBKF0201.vb" />
+    <Compile Include="Data\DataHBKF0301.vb" />
+    <Compile Include="Data\Setting.vb" />
+    <Compile Include="Declare\CommonDeclareHBKB.vb" />
+    <Compile Include="Data\DataHBKB0101.vb" />
+    <Compile Include="Declare\CommonDeclareHBKC.vb" />
+    <Compile Include="Declare\CommonDeclareHBKD.vb" />
+    <Compile Include="Declare\CommonDeclareHBKE.vb" />
+    <Compile Include="Declare\CommonDeclareHBKF.vb" />
+    <Compile Include="exControl\BaseSearchForm.Designer.vb">
+      <DependentUpon>BaseSearchForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="exControl\BaseSearchForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB0101.designer.vb">
+      <DependentUpon>HBKB0101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB0101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB0201.Designer.vb">
+      <DependentUpon>HBKB0201.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB0201.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB0301.Designer.vb">
+      <DependentUpon>HBKB0301.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB0301.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB0401.Designer.vb">
+      <DependentUpon>HBKB0401.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB0401.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB0501.Designer.vb">
+      <DependentUpon>HBKB0501.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB0501.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB0601.Designer.vb">
+      <DependentUpon>HBKB0601.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB0601.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB0701.Designer.vb">
+      <DependentUpon>HBKB0701.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB0701.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB0801.Designer.vb">
+      <DependentUpon>HBKB0801.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB0801.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB0901.Designer.vb">
+      <DependentUpon>HBKB0901.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB0901.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB1001.Designer.vb">
+      <DependentUpon>HBKB1001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB1001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB1101.designer.vb">
+      <DependentUpon>HBKB1101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB1101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB1102.Designer.vb">
+      <DependentUpon>HBKB1102.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB1102.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB1103.Designer.vb">
+      <DependentUpon>HBKB1103.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB1103.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB1104.designer.vb">
+      <DependentUpon>HBKB1104.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB1104.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB1105.designer.vb">
+      <DependentUpon>HBKB1105.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB1105.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB1201.Designer.vb">
+      <DependentUpon>HBKB1201.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB1201.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKB1301.Designer.vb">
+      <DependentUpon>HBKB1301.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKB1301.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKC0101.Designer.vb">
+      <DependentUpon>HBKC0101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKC0101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKC0201.Designer.vb">
+      <DependentUpon>HBKC0201.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKC0201.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKC0210.Designer.vb">
+      <DependentUpon>HBKC0210.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKC0210.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKC0301.Designer.vb">
+      <DependentUpon>HBKC0301.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKC0301.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKC0401.Designer.vb">
+      <DependentUpon>HBKC0401.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKC0401.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKC0501.Designer.vb">
+      <DependentUpon>HBKC0501.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKC0501.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKC0601.Designer.vb">
+      <DependentUpon>HBKC0601.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKC0601.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKC0701.Designer.vb">
+      <DependentUpon>HBKC0701.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKC0701.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKD0101.Designer.vb">
+      <DependentUpon>HBKD0101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKD0101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKD0201.Designer.vb">
+      <DependentUpon>HBKD0201.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKD0201.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKE0101.Designer.vb">
+      <DependentUpon>HBKE0101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKE0101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKE0201.Designer.vb">
+      <DependentUpon>HBKE0201.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKE0201.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKF0101.Designer.vb">
+      <DependentUpon>HBKF0101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKF0101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HBKF0201.Designer.vb">
+      <DependentUpon>HBKF0201.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HBKF0201.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logic\LogicHBKB0101.vb" />
+    <Compile Include="Logic\LogicHBKB0102.vb" />
+    <Compile Include="Logic\LogicHBKB0201.vb" />
+    <Compile Include="Logic\LogicHBKB0202.vb" />
+    <Compile Include="Logic\LogicHBKB0203.vb" />
+    <Compile Include="Logic\LogicHBKB0204.vb" />
+    <Compile Include="Logic\LogicHBKB0301.vb" />
+    <Compile Include="Logic\LogicHBKB0401.vb" />
+    <Compile Include="Logic\LogicHBKB0501.vb" />
+    <Compile Include="Logic\LogicHBKB0701.vb" />
+    <Compile Include="Logic\LogicHBKB0702.vb" />
+    <Compile Include="Logic\LogicHBKB0801.vb" />
+    <Compile Include="Logic\LogicHBKB0901.vb" />
+    <Compile Include="Logic\LogicHBKB1001.vb" />
+    <Compile Include="Logic\LogicHBKB1101.vb" />
+    <Compile Include="Logic\LogicHBKB1102.vb" />
+    <Compile Include="Logic\LogicHBKB1103.vb" />
+    <Compile Include="Logic\LogicHBKB1104.vb" />
+    <Compile Include="Logic\LogicHBKB1105.vb" />
+    <Compile Include="Logic\LogicHBKB1201.vb" />
+    <Compile Include="Logic\LogicHBKB1202.vb" />
+    <Compile Include="Logic\LogicHBKB0601.vb" />
+    <Compile Include="Logic\LogicHBKB1203.vb" />
+    <Compile Include="Logic\LogicHBKB1204.vb" />
+    <Compile Include="Logic\LogicHBKB1301.vb" />
+    <Compile Include="Logic\LogicHBKC0101.vb" />
+    <Compile Include="Logic\LogicHBKC0102.vb" />
+    <Compile Include="Logic\LogicHBKC0201.vb" />
+    <Compile Include="Logic\LogicHBKC0202.vb" />
+    <Compile Include="Logic\LogicHBKC0203.vb" />
+    <Compile Include="Logic\LogicHBKC0204.vb" />
+    <Compile Include="Logic\LogicHBKC0205.vb" />
+    <Compile Include="Logic\LogicHBKC0206.vb" />
+    <Compile Include="Logic\LogicHBKC0207.vb" />
+    <Compile Include="Logic\LogicHBKC0209.vb" />
+    <Compile Include="Logic\LogicHBKC0210.vb" />
+    <Compile Include="Logic\LogicHBKC0211.vb" />
+    <Compile Include="Logic\LogicHBKC0301.vb" />
+    <Compile Include="Logic\LogicHBKC0401.vb" />
+    <Compile Include="Logic\LogicHBKC0501.vb" />
+    <Compile Include="Logic\LogicHBKC0601.vb" />
+    <Compile Include="Logic\LogicHBKC0701.vb" />
+    <Compile Include="Logic\LogicHBKD0101.vb" />
+    <Compile Include="Logic\LogicHBKD0102.vb" />
+    <Compile Include="Logic\LogicHBKD0201.vb" />
+    <Compile Include="Logic\LogicHBKD0202.vb" />
+    <Compile Include="Logic\LogicHBKD0203.vb" />
+    <Compile Include="Logic\LogicHBKE0101.vb" />
+    <Compile Include="Logic\LogicHBKE0102.vb" />
+    <Compile Include="Logic\LogicHBKE0201.vb" />
+    <Compile Include="Logic\LogicHBKE0202.vb" />
+    <Compile Include="Logic\LogicHBKF0101.vb" />
+    <Compile Include="Logic\LogicHBKF0102.vb" />
+    <Compile Include="Logic\LogicHBKF0201.vb" />
+    <Compile Include="Logic\LogicHBKF0301.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Sql\SqlHBKB0101.vb" />
+    <Compile Include="Sql\SqlHBKB0102.vb" />
+    <Compile Include="Sql\SqlHBKB0202.vb" />
+    <Compile Include="Sql\SqlHBKB0203.vb" />
+    <Compile Include="Sql\SqlHBKB0204.vb" />
+    <Compile Include="Sql\SqlHBKB0301.vb" />
+    <Compile Include="Sql\SqlHBKB0401.vb" />
+    <Compile Include="Sql\SqlHBKB0501.vb" />
+    <Compile Include="Sql\SqlHBKB0701.vb" />
+    <Compile Include="Sql\SqlHBKB0702.vb" />
+    <Compile Include="Sql\SqlHBKB0801.vb" />
+    <Compile Include="Sql\SqlHBKB0901.vb" />
+    <Compile Include="Sql\SqlHBKB1101.vb" />
+    <Compile Include="Sql\SqlHBKB1102.vb" />
+    <Compile Include="Sql\SqlHBKB1103.vb" />
+    <Compile Include="Sql\SqlHBKB1104.vb" />
+    <Compile Include="Sql\SqlHBKB1105.vb" />
+    <Compile Include="Sql\SqlHBKB1201.vb" />
+    <Compile Include="Sql\SqlHBKB1202.vb" />
+    <Compile Include="Sql\SqlHBKB0601.vb" />
+    <Compile Include="Sql\SqlHBKB1203.vb" />
+    <Compile Include="Sql\SqlHBKB1204.vb" />
+    <Compile Include="Sql\SqlHBKB1301.vb" />
+    <Compile Include="Sql\SqlHBKC0101.vb" />
+    <Compile Include="Sql\SqlHBKC0102.vb" />
+    <Compile Include="Sql\SqlHBKC0201.vb" />
+    <Compile Include="Sql\SqlHBKC0202.vb" />
+    <Compile Include="Sql\SqlHBKC0203.vb" />
+    <Compile Include="Sql\SqlHBKC0204.vb" />
+    <Compile Include="Sql\SqlHBKC0205.vb" />
+    <Compile Include="Sql\SqlHBKC0206.vb" />
+    <Compile Include="Sql\SqlHBKC0209.vb" />
+    <Compile Include="Sql\SqlHBKC0210.vb" />
+    <Compile Include="Sql\SqlHBKC0211.vb" />
+    <Compile Include="Sql\SqlHBKC0301.vb" />
+    <Compile Include="Sql\SqlHBKC0401.vb" />
+    <Compile Include="Sql\SqlHBKC0501.vb" />
+    <Compile Include="Sql\SqlHBKC0601.vb" />
+    <Compile Include="Sql\SqlHBKC0701.vb" />
+    <Compile Include="Sql\SqlHBKD0101.vb" />
+    <Compile Include="Sql\SqlHBKD0102.vb" />
+    <Compile Include="Sql\SqlHBKD0201.vb" />
+    <Compile Include="Sql\SqlHBKD0203.vb" />
+    <Compile Include="Sql\SqlHBKE0101.vb" />
+    <Compile Include="Sql\SqlHBKE0102.vb" />
+    <Compile Include="Sql\SqlHBKE0201.vb" />
+    <Compile Include="Sql\SqlHBKE0202.vb" />
+    <Compile Include="Sql\SqlHBKF0101.vb" />
+    <Compile Include="Sql\SqlHBKF0102.vb" />
+    <Compile Include="Sql\SqlHBKF0201.vb" />
+    <Compile Include="Sql\SqlHBKF0301.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="exControl\BaseSearchForm.resx">
+      <DependentUpon>BaseSearchForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB0101.resx">
+      <DependentUpon>HBKB0101.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB0201.resx">
+      <DependentUpon>HBKB0201.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB0301.resx">
+      <DependentUpon>HBKB0301.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB0401.resx">
+      <DependentUpon>HBKB0401.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB0501.resx">
+      <DependentUpon>HBKB0501.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB0601.resx">
+      <DependentUpon>HBKB0601.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB0701.resx">
+      <DependentUpon>HBKB0701.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB0801.resx">
+      <DependentUpon>HBKB0801.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB0901.resx">
+      <DependentUpon>HBKB0901.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB1001.resx">
+      <DependentUpon>HBKB1001.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB1101.resx">
+      <DependentUpon>HBKB1101.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB1102.resx">
+      <DependentUpon>HBKB1102.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB1103.resx">
+      <DependentUpon>HBKB1103.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB1104.resx">
+      <DependentUpon>HBKB1104.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB1105.resx">
+      <DependentUpon>HBKB1105.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB1201.resx">
+      <DependentUpon>HBKB1201.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKB1301.resx">
+      <DependentUpon>HBKB1301.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKC0101.resx">
+      <DependentUpon>HBKC0101.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKC0201.resx">
+      <DependentUpon>HBKC0201.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKC0210.resx">
+      <DependentUpon>HBKC0210.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKC0301.resx">
+      <DependentUpon>HBKC0301.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKC0401.resx">
+      <DependentUpon>HBKC0401.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKC0501.resx">
+      <DependentUpon>HBKC0501.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKC0601.resx">
+      <DependentUpon>HBKC0601.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKC0701.resx">
+      <DependentUpon>HBKC0701.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKD0101.resx">
+      <DependentUpon>HBKD0101.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKD0201.resx">
+      <DependentUpon>HBKD0201.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKE0101.resx">
+      <DependentUpon>HBKE0101.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKE0201.resx">
+      <DependentUpon>HBKE0201.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKF0101.resx">
+      <DependentUpon>HBKF0101.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HBKF0201.resx">
+      <DependentUpon>HBKF0201.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonHBK\CommonHBK.vbproj">
+      <Project>{CEA43944-C47C-4739-9F7F-93BBC6F62F56}</Project>
+      <Name>CommonHBK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HBKZ\HBKZ.vbproj">
+      <Project>{9908D5BE-74CA-4EF5-B3B4-6BE8C56A7D58}</Project>
+      <Name>HBKZ</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラー 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,248 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class HBKB1101
+    Inherits System.Windows.Forms.Form
+
+    'フォームがコンポーネントの一覧をクリーンアップするために dispose をオーバーライドします。
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Windows フォーム デザイナで必要です。
+    Private components As System.ComponentModel.IContainer
+
+    'メモ: 以下のプロシージャは Windows フォーム デザイナで必要です。
+    'Windows フォーム デザイナを使用して変更できます。  
+    'コード エディタを使って変更しないでください。
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim ComboBoxCellType1 As FarPoint.Win.Spread.CellType.ComboBoxCellType = New FarPoint.Win.Spread.CellType.ComboBoxCellType()
+        Dim TextCellType1 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Dim ComboBoxCellType2 As FarPoint.Win.Spread.CellType.ComboBoxCellType = New FarPoint.Win.Spread.CellType.ComboBoxCellType()
+        Dim TextCellType2 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Dim TextCellType3 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Dim TextCellType4 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Dim TextCellType5 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Dim TextCellType6 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Dim TextCellType7 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Dim ComboBoxCellType3 As FarPoint.Win.Spread.CellType.ComboBoxCellType = New FarPoint.Win.Spread.CellType.ComboBoxCellType()
+        Dim TextCellType8 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Dim TextCellType9 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
+        Me.ctmShowChange = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.thisColShow = New System.Windows.Forms.ToolStripMenuItem()
+        Me.thisColVisible = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnBack = New System.Windows.Forms.Button()
+        Me.btnTouroku = New System.Windows.Forms.Button()
+        Me.grpLoginUser = New CommonHBK.GroupControlEx()
+        Me.vwIkkatsu = New CommonHBK.FpSpreadEx()
+        Me.vwIkkatsu_Sheet1 = New FarPoint.Win.Spread.SheetView()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.ctmShowChange.SuspendLayout()
+        CType(Me.vwIkkatsu, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.vwIkkatsu_Sheet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'ctmShowChange
+        '
+        Me.ctmShowChange.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.thisColShow, Me.thisColVisible})
+        Me.ctmShowChange.Name = "ctmShowChange"
+        Me.ctmShowChange.Size = New System.Drawing.Size(113, 48)
+        '
+        'thisColShow
+        '
+        Me.thisColShow.Name = "thisColShow"
+        Me.thisColShow.Size = New System.Drawing.Size(112, 22)
+        Me.thisColShow.Text = "表示"
+        '
+        'thisColVisible
+        '
+        Me.thisColVisible.Name = "thisColVisible"
+        Me.thisColVisible.Size = New System.Drawing.Size(112, 22)
+        Me.thisColVisible.Text = "非表示"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label3.Location = New System.Drawing.Point(12, 34)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(41, 12)
+        Me.Label3.TabIndex = 155
+        Me.Label3.Text = "作業："
+        '
+        'btnBack
+        '
+        Me.btnBack.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnBack.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.btnBack.Location = New System.Drawing.Point(5, 682)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(88, 31)
+        Me.btnBack.TabIndex = 2
+        Me.btnBack.Text = "戻る"
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
+        'btnTouroku
+        '
+        Me.btnTouroku.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnTouroku.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.btnTouroku.Location = New System.Drawing.Point(1169, 682)
+        Me.btnTouroku.Name = "btnTouroku"
+        Me.btnTouroku.Size = New System.Drawing.Size(88, 31)
+        Me.btnTouroku.TabIndex = 3
+        Me.btnTouroku.Text = "登録"
+        Me.btnTouroku.UseVisualStyleBackColor = True
+        '
+        'grpLoginUser
+        '
+        Me.grpLoginUser.Location = New System.Drawing.Point(855, 0)
+        Me.grpLoginUser.Name = "grpLoginUser"
+        Me.grpLoginUser.PropBtnUnlockEnabled = False
+        Me.grpLoginUser.PropBtnUnlockVisible = False
+        Me.grpLoginUser.PropLockDate = New Date(2012, 6, 21, 16, 23, 28, 760)
+        Me.grpLoginUser.PropLockInfoVisible = False
+        Me.grpLoginUser.Size = New System.Drawing.Size(406, 62)
+        Me.grpLoginUser.TabIndex = 1
+        '
+        'vwIkkatsu
+        '
+        Me.vwIkkatsu.AccessibleDescription = "vwIkkatsu, Sheet1, Row 0, Column 0, "
+        Me.vwIkkatsu.ClipboardOptions = FarPoint.Win.Spread.ClipboardOptions.NoHeaders
+        Me.vwIkkatsu.EditModeReplace = True
+        Me.vwIkkatsu.HorizontalScrollBarPolicy = FarPoint.Win.Spread.ScrollBarPolicy.Never
+        Me.vwIkkatsu.Location = New System.Drawing.Point(15, 76)
+        Me.vwIkkatsu.Name = "vwIkkatsu"
+        Me.vwIkkatsu.Sheets.AddRange(New FarPoint.Win.Spread.SheetView() {Me.vwIkkatsu_Sheet1})
+        Me.vwIkkatsu.Size = New System.Drawing.Size(1242, 602)
+        Me.vwIkkatsu.TabIndex = 1
+        '
+        'vwIkkatsu_Sheet1
+        '
+        Me.vwIkkatsu_Sheet1.Reset()
+        vwIkkatsu_Sheet1.SheetName = "Sheet1"
+        'Formulas and custom names must be loaded with R1C1 reference style
+        Me.vwIkkatsu_Sheet1.ReferenceStyle = FarPoint.Win.Spread.Model.ReferenceStyle.R1C1
+        vwIkkatsu_Sheet1.ColumnCount = 12
+        vwIkkatsu_Sheet1.RowCount = 1000
+        Me.vwIkkatsu_Sheet1.AutoGenerateColumns = False
+        Me.vwIkkatsu_Sheet1.ColumnHeader.Cells.Get(0, 0).Value = "種別"
+        Me.vwIkkatsu_Sheet1.ColumnHeader.Cells.Get(0, 1).Value = "番号"
+        Me.vwIkkatsu_Sheet1.ColumnHeader.Cells.Get(0, 2).Value = "タイプ"
+        Me.vwIkkatsu_Sheet1.ColumnHeader.Cells.Get(0, 3).Value = "製造番号"
+        Me.vwIkkatsu_Sheet1.ColumnHeader.Cells.Get(0, 4).Value = "MACアドレス1"
+        Me.vwIkkatsu_Sheet1.ColumnHeader.Cells.Get(0, 5).Value = "MACアドレス2"
+        Me.vwIkkatsu_Sheet1.ColumnHeader.Cells.Get(0, 6).Value = "メモリー容量"
+        Me.vwIkkatsu_Sheet1.ColumnHeader.Cells.Get(0, 7).Value = "サポセン固定資産番号"
+        Me.vwIkkatsu_Sheet1.ColumnHeader.Cells.Get(0, 8).Value = "リース期限日"
+        Me.vwIkkatsu_Sheet1.ColumnHeader.Cells.Get(0, 9).Value = "CIオーナー"
+        Me.vwIkkatsu_Sheet1.ColumnHeader.Cells.Get(0, 10).Value = "イメージ番号"
+        Me.vwIkkatsu_Sheet1.ColumnHeader.Cells.Get(0, 11).Value = "機器状態"
+        Me.vwIkkatsu_Sheet1.ColumnHeader.Rows.Get(0).Height = 28.0!
+        ComboBoxCellType1.ButtonAlign = FarPoint.Win.ButtonAlign.Right
+        ComboBoxCellType1.MaxLength = 25
+        Me.vwIkkatsu_Sheet1.Columns.Get(0).CellType = ComboBoxCellType1
+        Me.vwIkkatsu_Sheet1.Columns.Get(0).Label = "種別"
+        Me.vwIkkatsu_Sheet1.Columns.Get(0).Width = 70.0!
+        TextCellType1.MaxLength = 5
+        Me.vwIkkatsu_Sheet1.Columns.Get(1).CellType = TextCellType1
+        Me.vwIkkatsu_Sheet1.Columns.Get(1).Label = "番号"
+        Me.vwIkkatsu_Sheet1.Columns.Get(1).Width = 53.0!
+        ComboBoxCellType2.ButtonAlign = FarPoint.Win.ButtonAlign.Right
+        ComboBoxCellType2.MaxLength = 1
+        Me.vwIkkatsu_Sheet1.Columns.Get(2).CellType = ComboBoxCellType2
+        Me.vwIkkatsu_Sheet1.Columns.Get(2).Label = "タイプ"
+        Me.vwIkkatsu_Sheet1.Columns.Get(2).Width = 42.0!
+        TextCellType2.MaxLength = 25
+        Me.vwIkkatsu_Sheet1.Columns.Get(3).CellType = TextCellType2
+        Me.vwIkkatsu_Sheet1.Columns.Get(3).Label = "製造番号"
+        Me.vwIkkatsu_Sheet1.Columns.Get(3).Width = 80.0!
+        TextCellType3.MaxLength = 17
+        Me.vwIkkatsu_Sheet1.Columns.Get(4).CellType = TextCellType3
+        Me.vwIkkatsu_Sheet1.Columns.Get(4).Label = "MACアドレス1"
+        Me.vwIkkatsu_Sheet1.Columns.Get(4).Width = 80.0!
+        TextCellType4.MaxLength = 17
+        Me.vwIkkatsu_Sheet1.Columns.Get(5).CellType = TextCellType4
+        Me.vwIkkatsu_Sheet1.Columns.Get(5).Label = "MACアドレス2"
+        Me.vwIkkatsu_Sheet1.Columns.Get(5).Width = 80.0!
+        TextCellType5.MaxLength = 25
+        Me.vwIkkatsu_Sheet1.Columns.Get(6).CellType = TextCellType5
+        Me.vwIkkatsu_Sheet1.Columns.Get(6).Label = "メモリー容量"
+        Me.vwIkkatsu_Sheet1.Columns.Get(6).Width = 80.0!
+        TextCellType6.MaxLength = 25
+        Me.vwIkkatsu_Sheet1.Columns.Get(7).CellType = TextCellType6
+        Me.vwIkkatsu_Sheet1.Columns.Get(7).Label = "サポセン固定資産番号"
+        Me.vwIkkatsu_Sheet1.Columns.Get(7).Width = 80.0!
+        TextCellType7.MaxLength = 10
+        Me.vwIkkatsu_Sheet1.Columns.Get(8).CellType = TextCellType7
+        Me.vwIkkatsu_Sheet1.Columns.Get(8).Label = "リース期限日"
+        Me.vwIkkatsu_Sheet1.Columns.Get(8).Width = 70.0!
+        ComboBoxCellType3.ButtonAlign = FarPoint.Win.ButtonAlign.Right
+        ComboBoxCellType3.MaxLength = 10
+        Me.vwIkkatsu_Sheet1.Columns.Get(9).CellType = ComboBoxCellType3
+        Me.vwIkkatsu_Sheet1.Columns.Get(9).Label = "CIオーナー"
+        Me.vwIkkatsu_Sheet1.Columns.Get(9).Width = 107.0!
+        TextCellType8.MaxLength = 25
+        Me.vwIkkatsu_Sheet1.Columns.Get(10).CellType = TextCellType8
+        Me.vwIkkatsu_Sheet1.Columns.Get(10).Label = "イメージ番号"
+        Me.vwIkkatsu_Sheet1.Columns.Get(10).Width = 80.0!
+        TextCellType9.MaxLength = 1000
+        TextCellType9.Multiline = True
+        TextCellType9.WordWrap = True
+        Me.vwIkkatsu_Sheet1.Columns.Get(11).CellType = TextCellType9
+        Me.vwIkkatsu_Sheet1.Columns.Get(11).Label = "機器状態"
+        Me.vwIkkatsu_Sheet1.Columns.Get(11).Width = 200.0!
+        Me.vwIkkatsu_Sheet1.DataAutoCellTypes = False
+        Me.vwIkkatsu_Sheet1.DataAutoHeadings = False
+        Me.vwIkkatsu_Sheet1.DataAutoSizeColumns = False
+        Me.vwIkkatsu_Sheet1.RowHeader.Columns.Default.Resizable = False
+        Me.vwIkkatsu_Sheet1.ReferenceStyle = FarPoint.Win.Spread.Model.ReferenceStyle.A1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(49, 34)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(77, 12)
+        Me.Label1.TabIndex = 157
+        Me.Label1.Text = "一括機器更新"
+        '
+        'HBKB1101
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(1262, 721)
+        Me.Controls.Add(Me.btnBack)
+        Me.Controls.Add(Me.btnTouroku)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.vwIkkatsu)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.grpLoginUser)
+        Me.MinimumSize = New System.Drawing.Size(220, 80)
+        Me.Name = "HBKB1101"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "ひびき：一括更新"
+        Me.ctmShowChange.ResumeLayout(False)
+        CType(Me.vwIkkatsu, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.vwIkkatsu_Sheet1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents btnBack As System.Windows.Forms.Button
+    Friend WithEvents btnTouroku As System.Windows.Forms.Button
+    Friend WithEvents grpLoginUser As CommonHBK.GroupControlEx
+    Friend WithEvents ctmShowChange As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents thisColShow As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents thisColVisible As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents vwIkkatsu As CommonHBK.FpSpreadEx
+    Friend WithEvents vwIkkatsu_Sheet1 As FarPoint.Win.Spread.SheetView
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+End Class
